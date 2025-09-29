@@ -46,8 +46,8 @@ By default, the app runs at:
 ├── drizzle/          # Database migrations & schema
 ├── src/
 │   ├── routes/       # Hono routes
-│   ├── db.ts         # Drizzle ORM setup
-│   ├── auth.ts       # Better Auth config
+│   ├── db/index.ts   # Drizzle ORM setup
+│   ├── utils/auth.ts # Better Auth config
 │   └── index.ts      # App entry
 ├── .env              # Environment variables
 ├── package.json
@@ -62,7 +62,8 @@ Create a `.env` file in the root directory with your configuration:
 
 ```ini
 DATABASE_URL=postgres://user:password@localhost:5432/dbname
-AUTH_SECRET=your-secret-key
+BETTER_AUTH_SECRET=your-secret-key
+BETTER_AUTH_URL=your-api-base-url
 ```
 
 ---
