@@ -73,7 +73,7 @@ BETTER_AUTH_URL=your-api-base-url
 Run Drizzle migrations:
 
 ```sh
-bun run drizzle:push
+bun run drizzle-kit migrate
 ```
 
 (Adjust command based on your chosen setup.)
