@@ -1,4 +1,4 @@
-🚀 Starter Kit for Hono + Drizzle + Better Auth
+#h1 🚀 Starter Kit for Hono + Drizzle + Better Auth
 
 A modern starter template for building full-stack web applications with Hono
 , Drizzle ORM
