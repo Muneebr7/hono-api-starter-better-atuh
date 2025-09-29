@@ -87,6 +87,24 @@ Update `auth.ts` to customize providers, session handling, or user model.
 
 ---
 
+## 📖 API Documentation
+
+Better Auth includes auto-generated OpenAPI documentation for all authentication endpoints.
+
+Once the server is running, you can explore the reference docs at:
+
+👉 http://localhost:3000/api/auth/reference
+
+This reference includes:
+
+Full list of available auth routes
+
+Request & response schemas
+
+Example payloads for testing
+
+Interactive UI for trying endpoints
+
 ## 📚 Useful Links
 
 - [Hono Documentation](https://hono.dev/)
