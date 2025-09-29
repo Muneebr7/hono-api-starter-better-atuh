@@ -1,44 +1,48 @@
-#h1 🚀 Starter Kit for Hono + Drizzle + Better Auth
+# 🚀 Starter Kit for Hono + Drizzle + Better Auth
 
-A modern starter template for building full-stack web applications with Hono
-, Drizzle ORM
-, and Better Auth
-.
-Powered by Bun
- for fast installs and dev server.
+A modern starter template for building full-stack web applications with [Hono](https://hono.dev/), [Drizzle ORM](https://orm.drizzle.team/), and [Better Auth](https://better-auth.com/).  
+Powered by [Bun](https://bun.sh/) for fast installs and dev server.  
 
-✨ Features
+---
 
-⚡ Hono – lightweight, super-fast web framework
+## ✨ Features
 
-🗄 Drizzle ORM – type-safe, SQL-first ORM for your database
+- ⚡ **Hono** – lightweight, super-fast web framework
+- 🗄 **Drizzle ORM** – type-safe, SQL-first ORM for your database
+- 🔑 **Better Auth** – simple & secure authentication setup
+- 🧑‍💻 **Bun** – ultra-fast JavaScript runtime
+- 📂 Ready-to-use project structure
+- 🛠 Dev-friendly scripts for quick start
 
-🔑 Better Auth – simple & secure authentication setup
+---
 
-🧑‍💻 Bun – ultra-fast JavaScript runtime
-
-📂 Ready-to-use project structure
-
-🛠 Dev-friendly scripts for quick start
-
-📦 Installation
+## 📦 Installation
 
 Clone the repository and install dependencies:
 
+```sh
 bun install
+```
 
-🏃 Running the Project
+---
+
+## 🏃 Running the Project
 
 Start the development server:
 
+```sh
 bun run dev
-
+```
 
 By default, the app runs at:
 
-👉 http://localhost:3000
+👉 [http://localhost:3000](http://localhost:3000)
 
-⚙️ Project Structure
+---
+
+## ⚙️ Project Structure
+
+```
 ├── drizzle/          # Database migrations & schema
 ├── src/
 │   ├── routes/       # Hono routes
@@ -48,40 +52,49 @@ By default, the app runs at:
 ├── .env              # Environment variables
 ├── package.json
 └── README.md
+```
 
-🔧 Environment Variables
+---
 
-Create a .env file in the root directory with your configuration:
+## 🔧 Environment Variables
 
+Create a `.env` file in the root directory with your configuration:
+
+```ini
 DATABASE_URL=postgres://user:password@localhost:5432/dbname
 AUTH_SECRET=your-secret-key
+```
 
-🗃 Database Setup
+---
+
+## 🗃 Database Setup
 
 Run Drizzle migrations:
 
+```sh
 bun run drizzle:push
-
+```
 
 (Adjust command based on your chosen setup.)
 
-🔒 Authentication
+---
 
-Better Auth is preconfigured.
-Update auth.ts to customize providers, session handling, or user model.
+## 🔒 Authentication
 
-📚 Useful Links
+Better Auth is preconfigured.  
+Update `auth.ts` to customize providers, session handling, or user model.
 
-Hono Documentation
+---
 
-Drizzle ORM Docs
+## 📚 Useful Links
 
-Better Auth Docs
+- [Hono Documentation](https://hono.dev/)
+- [Drizzle ORM Docs](https://orm.drizzle.team/)
+- [Better Auth Docs](https://better-auth.com/)
+- [Bun Documentation](https://bun.sh/docs)
 
-Bun Documentation
+---
 
-📜 License
+## 📜 License
 
-MIT – free to use, modify, and share.
-
-Do you want me to also add example code snippets (e.g., sample route.ts with auth middleware + DB query) so the README feels like a mini-guide, not just setup instructions?
+MIT – free to use, modify, and share.  
