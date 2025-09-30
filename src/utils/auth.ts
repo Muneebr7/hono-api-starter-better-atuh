@@ -9,11 +9,19 @@ export const auth = betterAuth({
         provider: "pg",
         schema
     }),
-    emailAndPassword: { 
-    enabled: true, 
+    emailAndPassword: {
+        enabled: true,
     },
-    plugins : [
+    plugins: [
         openAPI(),
-        admin()
-    ]
+        admin({
+            defaultRole : "admin"
+        })
+    ],
+    advanced: {
+        crossSubDomainCookies: {
+            enabled: true
+        }
+    },
+    trustedOrigins : ["http://localhost:5173"]
 });
