@@ -15,13 +15,19 @@ export const auth = betterAuth({
     plugins: [
         openAPI(),
         admin({
-            defaultRole : "admin"
+            defaultRole: "admin"
         })
     ],
     advanced: {
-        crossSubDomainCookies: {
-            enabled: true
+    cookies: {
+      sessionToken: {
+        attributes: {
+          sameSite: "none",
+          secure: true,
+          partitioned: true 
         }
-    },
-    trustedOrigins : ["http://localhost:5173"]
+      }
+    }
+  },
+    trustedOrigins: ["http://localhost:5173"]
 });
